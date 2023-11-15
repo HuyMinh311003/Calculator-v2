@@ -1,0 +1,119 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    background: linear-gradient(to right, #93A5CF, #E4EFE9);
+
+    font-family: lato;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+
+    margin: auto;
+    width: 20%;
+
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #A1C4FD, #C2E9FB);
+}
+
+/*name*/
+.name-container {
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 10px 0px 10px;
+    color: rgb(70, 70, 70);
+}
+
+/*display*/
+.display-container {
+    width: 100%;
+    display: flex;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    width: 100%;
+    min-height: 80px;
+    height: fit-content;
+
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    word-wrap: break-word;
+    word-break: break-all;
+
+    background: rgb(180, 180, 180);
+}
+
+.previous-operand,
+.current-operand {
+    min-height: 40px;
+    color: rgb(50, 50, 50);
+}
+
+.previous-operand {
+    font-size: 22px;
+}
+
+.current-operand {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+/*keyboard*/
+.keyboard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 3px 0px;
+}
+
+button {
+    background: rgb(50, 120, 255);
+    color: white;
+    cursor: pointer;
+
+    font-size: 20px;
+    width: 22%;
+    height: 50px;
+    margin: 3px;
+
+    border-style: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: rgb(50, 180, 255);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+button:active {
+    background: rgb(50, 120, 255);
+}
+
+.big-button {
+    width: 46%;
+}
